@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Unicode Nushu';
+    src:
+        local('Unicode Nushu'),
+        url(Uni1B170Nushu.woff2) format("woff2"),
+        url(Uni1B170Nushu.woff) format("woff"),
+        url(Uni1B170Nushu.ttf) format("truetype");
+    unicode-range: U+16FE1, U+1B170-1B2FB;
+}
