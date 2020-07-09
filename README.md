@@ -1,4 +1,4 @@
-# Unicode Nushu
+# Unicode Nushu [![](https://data.jsdelivr.com/v1/package/gh/nushu-script/font-unicode-nushu/badge)](https://www.jsdelivr.com/package/gh/nushu-script/font-unicode-nushu)
 
 Unicode Nushu 字体是目前可以显示女书字符的字体，它包括 396 个女书字符和 1 个女书标点。
 
