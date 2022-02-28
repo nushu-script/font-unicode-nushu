@@ -1,0 +1,21 @@
+name: Publish to Tencent Cloud COS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install coscmd
+        run: sudo pip install coscmd
+      - name: Configure coscmd
+        env:
+          SECRET_ID: ${{ secrets.SecretId }}
+          SECRET_KEY: ${{ secrets.SecretKey }}
+        run: coscmd config -a $SECRET_ID -s $SECRET_KEY -b nushu-script-1305783649 -r ap-guangzhou
+      - name: Publish static files to COS
+        run: coscmd upload -rs --delete -f . /font-unicode-nushu --ignore '**/.*'
